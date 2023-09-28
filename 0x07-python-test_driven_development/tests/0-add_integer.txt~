@@ -1,0 +1,67 @@
+
+The ``0-add_integer`` module
+
+
+Using ``add_integer``
+
+from 0-add_integer import add_integer
+
+Importing the function from the module:
+	  >>> add_integer = __import__("0-add_integer.py").add_integer
+	  
+Checking module for docstring:
+	 >>> mod_doc = __import__("0-add_integer.py").__doc__
+	 >>> len(mod_doc) > 1
+	 >>> True
+
+Checking function for docstring:
+	 >>> fxn_doc = __import__("0-add_integer.py").add_integer.__doc__
+	 >>> fxn_doc) > 1
+	 >>> True
+
+Checking for addition of two positive integers:
+	 >>> add_integer(2,3)
+	 >>> 5
+
+Checking adition of positive and negative integers:
+	 >>> add_integer(-3,2)
+	 >>> -1
+
+Checking for addition of an integer and float:
+	 >>> add_integer(3,4.00)
+	 >>> 7
+
+Checking for addition of two floats:
+	 >>> add_integer(3.00,4.00)
+	 >>> 7
+
+
+Checking for no argument:
+	 >>> add_integer()
+	 Traceback(most recent call)
+	 ...
+	 TypeError: add_integer missing 2 arguments
+
+Checking for one argument:	
+	 >>> add_integer(2)
+	 Traceback(most recent call)
+	 ...
+	 TypeError: add_integer missing one argument
+
+Checking for more than two arguments:
+	 >>> add_integr(1,3,4)
+	 Traceback(most recent call last)
+	 ...
+	 TypeError: add_integer takes two positional arguments but 3 were given
+
+Checking for addition of integer and non number:
+	 >>> add_integer("3",4)
+	 Traceback(most recent call last)
+	 ...
+	 TypeError: a and b must be integers
+
+Checking for addition of two non numbers:
+	 >>> add_integer("#","4")
+	 Traceback(most recent call last)
+	 ...
+	 TypeError: a and b must be integers
