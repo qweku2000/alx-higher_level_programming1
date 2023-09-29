@@ -1,0 +1,19 @@
+The ``2-matrix_divided`` module
+
+Checking the module docstring:
+	  >>> m = __import__("2-matrix_divided").__doc__
+	  >>> len(m) > 1
+	  True
+
+Importing function:
+	  matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Checking function docstring:
+	 >>> f = __import__("2-matrix_divided").matrix_divided.__doc__
+	 >>> len(f) > 1
+	 True
+
+Checking for matrix of integers divided by a non zero number:
+	 >>> [[2, 4, 6],[8, 10, 12]]/ 2
+	 [[1, 2, 3],[4, 5, 6]]
+	 
