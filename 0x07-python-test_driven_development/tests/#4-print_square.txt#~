@@ -1,0 +1,34 @@
+The ``4-print_square`` module
+
+Using the ``prnt_square`` function
+
+Importing module docstring:
+	  >>> m = __import__("4-print_square").__doc__
+	  >>> assert len(m) > 1
+	  True
+
+Importing function :
+	  >>> print_square = ___import__("4-print_square").print_square
+
+Importing function:
+	  >>> f = __import__("4-print_square").print_square.__doc__
+	  >>> assert len(f) > 1
+	  True
+
+Checking for a string parameter:
+	 >>> print_square("3")
+	 Traceback (most recent call last)
+	 ...
+	 TypeError: size must be an int
+
+Checking for no args:
+	 >>> print_square()
+	 Traceback (most recent call last)
+	 ...
+	 TypeError: print_square() missing one positional equirement: size
+
+Checking for more than i argument:
+	 >>> print_square(2,3)
+	 Traceback (most recent call last)
+	 ...
+	 PypeError

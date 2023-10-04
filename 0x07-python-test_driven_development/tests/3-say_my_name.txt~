@@ -1,0 +1,30 @@
+Using the ``3-say_my_name`` module
+
+Using the ``say_my_name`` function
+
+Importing 3-say_my_name module docstring:
+	  >>> m = __import__("3-say_my_name").__doc__
+	  >>> assert  len(m) > 1
+	  True
+
+Importing function from module:
+	  >>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Checking the function docstring:
+	 >>> f = __import__("3-say_my_name").say_my_name.__doc__
+	 >>> assert len(f) > 1
+	 True
+
+Checking a None type parameter:
+	 >>> say_my_name(None)
+	 Traceback (most recent call last)
+	 ...
+	 TypeError("first_name must be a string")
+	
+Checking for one input:
+	 >>> say_my_name("Josh")
+	 'My name is Josh '
+
+Checking for string parameters:
+	 >>> say_my_name("Josh", "Drake")
+	 My name is Josh Drake
