@@ -1,1 +1,0 @@
-A rview of python oop
