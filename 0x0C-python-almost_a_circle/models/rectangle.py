@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+0;10;1c#!/usr/bin/python3
 """Defines a Rectangle class"""
 from models.base import Base
 
@@ -80,6 +80,7 @@ class Rectangle(Base):
         return self.height * self.width
 
     def display(self):
+        """print rectangle with #"""
         for i in range(self.height):
                 for j in  range(self.width):
                     print("#",end="")
