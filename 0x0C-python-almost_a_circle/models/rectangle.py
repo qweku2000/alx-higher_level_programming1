@@ -4,7 +4,7 @@ from models.base import Base
 
 """Define a rectangle class"""
 class Rectangle(Base):
-    """ Represent a rectangle """
+    """Represent a rectangle"""
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initialize new rectangle
@@ -26,7 +26,7 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
     @property
-    """ set/get width """
+    """Set/get width"""
     def width(self):
         return self.__width
 
@@ -44,7 +44,7 @@ class Rectangle(Base):
 
     
     @height.setter
-    """ set/get height """
+    """Set/get height"""
     def height(self,val):
         if type(val) is not int:
             raise TypeError("height must be an integer")
@@ -65,7 +65,7 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
 
     @property
-    """ set/get the y coordinate """
+    """set/get the y coordinate"""
     def y(self):
         return self.__y
 
