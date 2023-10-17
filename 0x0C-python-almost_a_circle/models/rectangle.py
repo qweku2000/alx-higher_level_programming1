@@ -26,37 +26,37 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
     @property
-    """ get the width """
+    """ set/get width """
     def width(self):
         return self.__width
 
     @width.setter
-    """ set the width """
     def width(self,val):
         if type(val) is not int:
             raise TypeError("width must be an integer")
         if val <= 0 :
             raise ValueError("width must be > 0")
         self.__width = val
-    """ get the height """
+    
     @property
     def height(self):
         return self.__height
 
-    """ set the height """
+    
     @height.setter
+    """ set/get height """
     def height(self,val):
         if type(val) is not int:
             raise TypeError("height must be an integer")
         if val <=0 :
             raise ValueError("height must be > 0")
         self.__height = val
-    """ set the x coordinate """
+    
     @property
+    """ set/get x coordinate """
     def x(self):
         return self.__x
-
-    """ get the x coordinate """
+    
     @x.setter
     def x(self,val):
         if type(val) is not int:
@@ -65,10 +65,10 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
 
     @property
-    """ set the y coordinate """
+    """ set/get the y coordinate """
     def y(self):
         return self.__y
-    """ get the y coordinate """
+
     @y.setter
     def y(self,val):
         if type(val) is not int:
