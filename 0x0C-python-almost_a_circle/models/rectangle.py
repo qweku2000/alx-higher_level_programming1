@@ -26,8 +26,8 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
     @property
-    """Set/get width"""
     def width(self):
+        """Set/get width"""
         return self.__width
 
     @width.setter
@@ -40,11 +40,11 @@ class Rectangle(Base):
     
     @property
     def height(self):
+        """Set/get height"""
         return self.__height
 
     
     @height.setter
-    """Set/get height"""
     def height(self,val):
         if type(val) is not int:
             raise TypeError("height must be an integer")
@@ -53,8 +53,8 @@ class Rectangle(Base):
         self.__height = val
     
     @property
-    """ set/get x coordinate """
     def x(self):
+        """Set/get x coordinate"""
         return self.__x
     
     @x.setter
@@ -65,8 +65,8 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
 
     @property
-    """set/get the y coordinate"""
     def y(self):
+        """Set/get y coordinate"""
         return self.__y
 
     @y.setter
