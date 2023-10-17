@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+0;10;1c#!/usr/bin/python3
 """Defines a Rectangle class"""
 from models.base import Base
 
@@ -74,6 +74,7 @@ class Rectangle(Base):
             raise TypeError("y must be an integer")
         if val < 0:
             raise ValueError("y must be >= 0")
-
+    
     def area(self):
+        """Returns the area of the Rectangle"""
         return self.height * self.width
